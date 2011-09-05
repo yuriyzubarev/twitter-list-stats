@@ -1,19 +1,5 @@
 #!/usr/bin/env python
 #
-# Copyright 2007 Google Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import util
 import urllib2
@@ -25,7 +11,11 @@ class Twitter():
         self.fetcher = twitter_fetcher
         
     def get_all_members(self, owner_screen_name, slug):
-        return ["marry", "scott"]
+        json_response = self.fetcher.get_all_members_json(owner_screen_name, slug)
+        screen_names = []
+        for user in json_response["users"]:
+            screen_names.append(user["screen_name"])
+        return screen_names
 
 if __name__ == '__main__':
     pass
