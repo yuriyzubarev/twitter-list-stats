@@ -1,0 +1,4 @@
+class MockTwitterFetcher():
+    pass
+    
+    
