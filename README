@@ -1,4 +1,17 @@
-Testing set-up:
+h1. Introduction
+
+twitter-list-stats is a Web app to to monitor members and subscribers of public Twitter lists on a daily time scale.
+
+It's R&D project to explore and practice the following languages, tools and methods:
+
+* Python
+* Google Application Engine
+* Twitter API
+* TDD
+
+h1. Random notes
+
+h3. Testing
 
 http://www.cuberick.com/2008/11/unit-test-your-google-app-engine-models.html
 
