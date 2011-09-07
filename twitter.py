@@ -23,6 +23,12 @@ class Twitter():
         for user in json_response["users"]:
             screen_names.append(user["screen_name"])
         return screen_names
+        
+    def get_member_subscriber_counts(self, user, list_id):
+        json_response = self.fetcher.get_list_json(user, list_id)
+        members = json_response["member_count"]
+        subscriber = json_response["subscriber_count"]
+        return members, subscriber
 
 if __name__ == '__main__':
     pass
