@@ -7,6 +7,7 @@ It's R&D project to explore and practice the following languages, tools and meth
 * Python
 * Google Application Engine
 * Twitter API
+* Vagrant and Chef
 * TDD
 
 h1. Random notes
@@ -15,10 +16,10 @@ h3. Testing
 
 http://www.cuberick.com/2008/11/unit-test-your-google-app-engine-models.html
 
-nosetests --with-gae -v ./test/controller/ ./test/domain/
+@nosetests --with-gae -v ./test/controller/ ./test/domain/@
 
 h3. DEV BOX
 
 http://vagrantup.com/docs/getting-started/index.html
 
-vagrant box add twitter-list-stats http://files.vagrantup.com/lucid32.box
+Just do "vagrant up" from the project root
