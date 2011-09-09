@@ -16,7 +16,7 @@ h3. Testing
 
 http://www.cuberick.com/2008/11/unit-test-your-google-app-engine-models.html
 
-@nosetests --with-gae -v ./test/controller/ ./test/domain/@
+@nosetests --with-gae -v ./test/*@
 
 h3. DEV BOX
 
