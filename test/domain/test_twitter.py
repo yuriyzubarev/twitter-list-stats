@@ -9,10 +9,10 @@ class MyTestCase(unittest.TestCase):
 
     def test_lists_for_user(self):
         slugs = self.twitter.get_lists("bob")
-        self.assertTrue("software-development" in slugs)
+        self.assertTrue(("53257043", "software-development") in slugs)
 
     def test_members_for_owner_screen_name_and_slug(self):
-        members = self.twitter.get_members("bob", "family")
+        members = self.twitter.get_members("bob", "software-development")
         self.assertTrue("rebeccaparsons" in members)
         self.assertTrue("mpoppendieck" in members)
         self.assertTrue("postwait" in members)

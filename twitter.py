@@ -14,7 +14,7 @@ class Twitter():
         json_response = self.fetcher.get_lists_json(user)
         slugs = []
         for l in json_response["lists"]:
-            slugs.append(l["slug"])
+            slugs.append((l["id_str"], l["slug"]))
         return slugs
     
     def get_members(self, owner_screen_name, slug):
