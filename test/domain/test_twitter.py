@@ -2,7 +2,7 @@ import unittest
 from twitter import Twitter
 from mock_twitter_fetcher import MockTwitterFetcher
 
-class MyTestCase(unittest.TestCase):
+class TwitterTestCase(unittest.TestCase):
     
     def setUp(self):
         self.twitter = Twitter(MockTwitterFetcher())
