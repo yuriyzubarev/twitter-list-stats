@@ -22,4 +22,4 @@ class TwitterTestCase(unittest.TestCase):
         self.assertEqual(25, m)
         self.assertEqual(0, s)
 
-        
+
