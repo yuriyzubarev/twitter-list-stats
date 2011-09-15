@@ -1,5 +1,5 @@
 
-class TwitterFetcher:
+class TwitterRepository:
     
     def get_lists_json(self, user):
         //result = urllib2.urlopen("http://api.twitter.com/1/yuriy_zubarev/lists.json")

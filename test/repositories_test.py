@@ -4,7 +4,7 @@ from entities import TList
 from entities import SnapShot
 from datetime import datetime
 
-class StorageTestCase(unittest.TestCase):
+class DatastoreTestCase(unittest.TestCase):
     
     def setUp(self):
         self.testbed = testbed.Testbed()

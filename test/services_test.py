@@ -7,7 +7,7 @@ import json
 class TwitterTestCase(unittest.TestCase):
     
     def setUp(self):
-        self.twitter = Twitter(MockTwitterFetcher())
+        self.twitter = Twitter(TwitterRepositoryMock())
 
     def test_lists_for_user(self):
         slugs = self.twitter.get_lists("bob")
@@ -24,7 +24,7 @@ class TwitterTestCase(unittest.TestCase):
         self.assertEqual(25, m)
         self.assertEqual(0, s)
 
-class MockTwitterFetcher():
+class TwitterRepositoryMock():
 
     def get_lists_json(self, user):
         return json.load(open(os.path.join(os.path.dirname(__file__), "mock_data/lists_for_user.json")))
