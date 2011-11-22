@@ -1,5 +1,7 @@
 
 class TwitterRepository:
+
+    """ Repository responsible for communicating to twitter.com and returning JSON responses """ 
     
     def get_lists_json(self, user):
         //result = urllib2.urlopen("http://api.twitter.com/1/yuriy_zubarev/lists.json")
