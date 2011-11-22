@@ -1,3 +1,7 @@
+h1. Status
+
+The project is shelved in favor of "in a mood for".
+
 h1. Introduction
 
 twitter-list-stats is a Web app to to monitor members and subscribers of public Twitter lists on a daily time scale.
